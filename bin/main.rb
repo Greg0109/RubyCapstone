@@ -20,6 +20,6 @@ while true
   for x in memes.get_memes
     link = x.to_s.delete('["]')
     post_meme(link)
-    sleep(1) # Sleep 30 min between memes
+    sleep(1800) # Sleep 30 min between memes
     end
 end
