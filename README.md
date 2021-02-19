@@ -2,9 +2,8 @@
 
 # Ruby Capstone
 
-> Creating first repository with Linter, separate commits and a HTML and CSS file
-
 This is a twitter bot, it scrappes memes from the /r/memes subreddit and uploads them to twitter
+It has been made using ruby with some classes to take the load from the main script. I corrected the errors using Rubocop and used RSpec to do the testing
 
 ## Screenshot
 
@@ -14,6 +13,7 @@ This is a twitter bot, it scrappes memes from the /r/memes subreddit and uploads
 
 - Ruby
 - Rubocop
+- RSpec
 - Linter
 
 ## Getting Started
