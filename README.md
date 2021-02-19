@@ -32,6 +32,17 @@ To get a local copy up and running follow these simple example steps.
 Ruby installed on your local machine.
 Terminal or similar to execute the program.
 
+# Twitter API
+
+You need to sign up to the developer program in Twitter to get access to their API keys. After that, open the api.rb file in the lib folder and edit it so that it contains the following: 
+
+```
+config.consumer_key = 'API-Key'
+config.consumer_secret = 'API-Key secret'
+config.access_token = 'Access Token'
+config.access_token_secret = 'Access Token Secret'
+```
+
 ### Gem libraries used
 - httparty
 - nokogiri
