@@ -1,4 +1,3 @@
-require 'nokogiri'
 require_relative '../lib/meme_retriever.rb'
 
 RSpec.describe MemeRetriever do
