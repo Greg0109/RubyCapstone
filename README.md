@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 Ruby installed on your local machine.
 Terminal or similar to execute the program.
 
-# Twitter API
+### Twitter API
 
 You need to sign up to the developer program in Twitter to get access to their API keys. After that, open the api.rb file in the lib folder and edit it so that it contains the following: 
 
@@ -63,13 +63,13 @@ Execute in terminal like so ```ruby bin/main.rb```
 ## Testing
 In this project the testing was done using RSpec to test all game logic methods.
 
-# Install
+### Install
 - In a terminal window type gem install rspec
 - Once rspec install has finished, type rspec --init
 - You will see a folder spec and a file .rspec
 - Inside spec folder you'll see a spec_helper.rb file.
 
-# Run
+### Run
 I have already created rspec-testing files called meme_retriever_spec.rb.
 - go to the folder inside your terminal type rspec
 - If all test pass you will see:
