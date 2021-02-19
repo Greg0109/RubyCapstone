@@ -18,5 +18,5 @@ memes = MemeRetriever.new
 for x in memes.get_memes
   link = x.to_s.delete('["]')
   post_meme(link)
-  sleep(10)
+  sleep(1800)
 end
