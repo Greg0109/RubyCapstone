@@ -14,9 +14,11 @@ def post_meme(link)
   client.update_with_media('New Meme!', File.open('./meme.jpg', 'r+'))
 end
 
-memes = MemeRetriever.new
-for x in memes.get_memes
-  link = x.to_s.delete('["]')
-  post_meme(link)
-  sleep(1800)
+while true
+    memes = MemeRetriever.new
+    for x in memes.get_memes
+        link = x.to_s.delete('["]')
+        post_meme(link)
+        sleep(1800)
+    end
 end
