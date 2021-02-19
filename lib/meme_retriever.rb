@@ -6,8 +6,13 @@ class MemeRetriever
     unparsed_page = HTTParty.get('http://reddit.com/r/memes/.rss', {
                                    headers: { 'User-Agent' => 'Httparty' }
                                  })
-    parsed_page = Nokogiri::XML(unparsed_page)
-    parsed_page
+    if !unparsed_page.body.nil? || !unparsed_page.body.empty?
+      parsed_page = Nokogiri::XML(unparsed_page.body)
+      parsed_page
+    else
+      puts "Cannot retrieve content from the web. Please try again later"
+      exit
+    end
   end
 
   def get_memes
