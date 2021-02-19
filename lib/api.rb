@@ -1,13 +1,26 @@
 require 'twitter'
 
 class API
-  def get_client
-    client = Twitter::REST::Client.new do |config|
+  def initialize
+    @client = Twitter::REST::Client.new do |config|
       config.consumer_key = 'API-Key'
       config.consumer_secret = 'API-Key secret'
       config.access_token = 'Access Token'
       config.access_token_secret = 'Access Token Secret'
     end
-    client
+  end
+
+  def post_meme(link)
+    if link.include?('http')
+      URI.open(link) do |image|
+        File.open('./meme.jpg', 'wb') do |file|
+          file.write(image.read)
+        end
+      end
+      @client.update_with_media('Dank Meme!', File.open('./meme.jpg', 'r+'))
+      puts 'Meme posted in https://twitter.com/greg_0109'
+    else
+      'Argument provided is not a link'
+    end
   end
 end
