@@ -11,7 +11,8 @@ def post_meme(link)
       file.write(image.read)
     end
   end
-  client.update_with_media('New Meme!', File.open('./meme.jpg', 'r+'))
+  client.update_with_media('Dank Meme!', File.open('./meme.jpg', 'r+'))
+  puts 'Meme posted in https://twitter.com/greg_0109'
 end
 
 while true
@@ -19,6 +20,6 @@ while true
   for x in memes.get_memes
     link = x.to_s.delete('["]')
     post_meme(link)
-    sleep(1800)
+    sleep(1) # Sleep 30 min between memes
     end
 end
