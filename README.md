@@ -1,9 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Ruby Capstone
+# Ruby Capstone - Meme Twitter Bot
 
-This is a twitter bot, it scrappes memes from the /r/memes subreddit and uploads them to twitter
-It has been made using ruby with some classes to take the load from the main script. I corrected the errors using Rubocop and used RSpec to do the testing
+This is a twitter bot, it scrappes memes from the /r/memes subreddit and uploads them to twitter.
+
+I made this bot cause I really like memes and I use twitter a lot, so it was only logical. Also the Twitter API is very well documented and made it easy to implement on the project.
+
+It has been made using ruby with some classes to take the load from the main script. 
+
+I corrected the errors using Rubocop and used RSpec to do the testing
 
 ## Screenshot
 
