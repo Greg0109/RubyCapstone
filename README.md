@@ -37,12 +37,27 @@ To install those libraries, simply use terminal like so ```sudo gem install [lib
 
 ## Install
 
-Download a copy of the main.rb file and all the files in the lib
+Download a copy of the repository
 
 ## Usage
 
 In terminal, cd to the folder ```cd RubyCapstone```
 Execute in terminal like so ```ruby main.rb```
+
+## Testing
+In this project the testing was done using RSpec to test all game logic methods.
+
+# Install
+- In a terminal window type gem install rspec
+- Once rspec install has finished, type rspec --init
+- You will see a folder spec and a file .rspec
+- Inside spec folder you'll see a spec_helper.rb file.
+
+# Run
+I have already created rspec-testing files called meme_retriever_spec.rb.
+- go to the folder inside your terminal type rspec
+- If all test pass you will see:
+ `2 examples, 0 failures`
 
 
 ## Authors
