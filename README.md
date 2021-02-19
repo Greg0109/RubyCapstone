@@ -7,7 +7,7 @@ It has been made using ruby with some classes to take the load from the main scr
 
 ## Screenshot
 
-![Screenshot](Screenshot.png)
+![Screenshot](assets/Screenshot.png)
 
 ## Built With
 
@@ -42,7 +42,7 @@ Download a copy of the repository
 ## Usage
 
 In terminal, cd to the folder ```cd RubyCapstone```
-Execute in terminal like so ```ruby main.rb```
+Execute in terminal like so ```ruby bin/main.rb```
 
 ## Testing
 In this project the testing was done using RSpec to test all game logic methods.

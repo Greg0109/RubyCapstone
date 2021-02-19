@@ -1,7 +1,7 @@
 require 'twitter'
 require 'open-uri'
-require_relative './lib/api.rb'
-require_relative './lib/meme_retriever.rb'
+require_relative '../lib/api.rb'
+require_relative '../lib/meme_retriever.rb'
 
 def post_meme(link)
   client_api = API.new
