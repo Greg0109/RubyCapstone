@@ -10,8 +10,7 @@ class MemeRetriever
       parsed_page = Nokogiri::XML(unparsed_page.body)
       parsed_page
     else
-      puts 'Cannot retrieve content from the web. Please try again later'
-      exit
+      return 'Cannot retrieve content from the web. Please try again later'
     end
   end
 

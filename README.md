@@ -34,7 +34,9 @@ Terminal or similar to execute the program.
 
 ### Twitter API
 
-You need to sign up to the developer program in Twitter to get access to their API keys. After that, open the api.rb file in the lib folder and edit it so that it contains the following: 
+You need to sign up to the developer program in Twitter to get access to their API keys. 
+
+After that, open the api.rb file in the lib folder and edit it so that it contains the following: 
 
 ```
 config.consumer_key = 'API-Key'

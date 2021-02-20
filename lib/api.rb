@@ -1,4 +1,5 @@
 require 'twitter'
+require 'open-uri'
 
 class API
   def initialize
@@ -18,6 +19,7 @@ class API
         end
       end
       @client.update_with_media('Dank Meme!', File.open('./meme.jpg', 'r+'))
+      return true
     else
       'Argument provided is not a link'
     end
