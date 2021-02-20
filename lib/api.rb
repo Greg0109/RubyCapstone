@@ -18,7 +18,6 @@ class API
         end
       end
       @client.update_with_media('Dank Meme!', File.open('./meme.jpg', 'r+'))
-      puts 'Meme posted in https://twitter.com/greg_0109'
     else
       'Argument provided is not a link'
     end
