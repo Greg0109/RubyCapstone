@@ -1,3 +1,9 @@
+AllCops:
+  Exclude:
+    - "Guardfile"
+    - "Rakefile"
+
+  DisplayCopNames: true
 
 Layout/LineLength:
   Max: 120
@@ -41,12 +47,4 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
-  Enabled: false
-Naming/AccessorMethodName:
-  Enabled: false
-Style/For:
-  Enabled: false
-Style/InfiniteLoop:
-  Enabled: false
-Lint/LiteralAsCondition:
   Enabled: false

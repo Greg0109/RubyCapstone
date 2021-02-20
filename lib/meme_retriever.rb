@@ -1,3 +1,5 @@
+# rubocop:disable Naming/AccessorMethodName
+
 require 'httparty'
 require 'nokogiri'
 
@@ -10,7 +12,7 @@ class MemeRetriever
       parsed_page = Nokogiri::XML(unparsed_page.body)
       parsed_page
     else
-      return 'Cannot retrieve content from the web. Please try again later'
+      'Cannot retrieve content from the web. Please try again later'
     end
   end
 
@@ -33,3 +35,5 @@ class MemeRetriever
     meme_array
   end
 end
+
+# rubocop:enable Naming/AccessorMethodName

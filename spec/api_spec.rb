@@ -1,3 +1,5 @@
+# rubocop:disable Layout/LineLength
+
 require_relative '../lib/api.rb'
 
 RSpec.describe API do
@@ -12,3 +14,5 @@ RSpec.describe API do
     end
   end
 end
+
+# rubocop:enable Layout/LineLength

@@ -1,3 +1,6 @@
+# rubocop:disable Style/For
+# rubocop:disable Style/InfiniteLoop
+
 require 'twitter'
 require 'open-uri'
 require_relative '../lib/api.rb'
@@ -8,7 +11,7 @@ while true
   memes = MemeRetriever.new
   time = 1800
   meme_array = memes.get_memes
-  if meme_array.count > 0
+  if meme_array.count.positive?
     for x in memes.get_memes
       link = x.to_s.delete('["]')
       client.post_meme(link)
@@ -16,7 +19,10 @@ while true
       sleep(time) # Sleep 30 min between memes
       end
   else
-    puts "Something went wrong with the API. Please try again later"
+    puts 'Something went wrong with the API. Please try again later'
     exit
-  end 
+  end
 end
+
+# rubocop:enable Style/For
+# rubocop:enable Style/InfiniteLoop
