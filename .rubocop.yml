@@ -1,5 +1,4 @@
-
-  AllCops:
+AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
