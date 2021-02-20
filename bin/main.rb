@@ -10,7 +10,7 @@ while true
   for x in memes.get_memes
     link = x.to_s.delete('["]')
     client.post_meme(link)
-    puts "Meme posted in https://twitter.com/greg_0109 Waiting #{time.to_s} seconds for next meme"
+    puts "Meme posted in https://twitter.com/greg_0109 Waiting #{time} seconds for next meme"
     sleep(time) # Sleep 30 min between memes
     end
 end
