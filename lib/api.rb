@@ -21,8 +21,8 @@ class API
           file.write(image.read)
         end
       end
-      @client.update_with_media("#{title}", File.open('./meme.jpg', 'r+'))
-      return true
+      @client.update_with_media(title.to_s, File.open('./meme.jpg', 'r+'))
+      true
     else
       'Argument provided is not a link'
     end

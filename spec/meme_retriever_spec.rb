@@ -10,7 +10,7 @@ RSpec.describe MemeRetriever do
 
   describe '#get_memes' do
     it 'Returns an array of links of memes' do
-      expect(meme_retriever.get_memes).to be_an_instance_of(Array)
+      expect(meme_retriever.get_memes).to be_an_instance_of(Hash)
     end
   end
 end

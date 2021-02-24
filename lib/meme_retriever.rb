@@ -17,7 +17,7 @@ class MemeRetriever
   end
 
   def get_memes
-    meme_array = Hash.new
+    meme_array = {}
     xml_content = get_url_content.to_s.split('<entry>')
     xml_content.each do |x|
       next unless x.include?('author')
@@ -31,7 +31,7 @@ class MemeRetriever
       url.each do |y|
         if y.to_s.include?('jpg') && y.to_s.include?('href')
           meme_link = y.scan(/"([^"]*)"/)
-          meme_array.store(title,meme_link)
+          meme_array.store(title, meme_link)
         end
       end
     end
