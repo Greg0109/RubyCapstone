@@ -27,4 +27,3 @@ end
 # rubocop:enable Style/For
 # rubocop:enable Style/InfiniteLoop
 # rubocop:enable Lint/LiteralAsCondition
-
