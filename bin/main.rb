@@ -1,5 +1,6 @@
 # rubocop:disable Style/For
 # rubocop:disable Style/InfiniteLoop
+# rubocop:disable Lint/LiteralAsCondition
 
 require 'twitter'
 require 'open-uri'
@@ -25,3 +26,5 @@ end
 
 # rubocop:enable Style/For
 # rubocop:enable Style/InfiniteLoop
+# rubocop:enable Lint/LiteralAsCondition
+
