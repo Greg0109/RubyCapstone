@@ -11,14 +11,18 @@ class API
     end
   end
 
-  def post_meme(link)
-    if link.include?('http')
+  def post_meme(meme)
+    title = meme[0].to_s
+    link = meme[1].to_s
+    link = link.delete('["]')
+    if link.include?('https')
       URI.open(link) do |image|
         File.open('./meme.jpg', 'wb') do |file|
           file.write(image.read)
         end
       end
-      @client.update_with_media('Dank Meme!', File.open('./meme.jpg', 'r+'))
+      @client.update_with_media(title.to_s, File.open('./meme.jpg', 'r+'))
+      true
     else
       'Argument provided is not a link'
     end
