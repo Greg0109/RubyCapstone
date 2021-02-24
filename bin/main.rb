@@ -13,9 +13,8 @@ while true
   time = 1800
   meme_array = memes.get_memes
   if meme_array.count.positive?
-    for x in memes.get_memes
-      link = x.to_s.delete('["]')
-      client.post_meme(link)
+    for x in meme_array
+      puts client.post_meme(x)
       puts "Meme posted in https://twitter.com/greg_0109 Waiting #{time} seconds for next meme"
       sleep(time) # Sleep 30 min between memes
       end
